@@ -1,0 +1,63 @@
+<!-- <h1>  '{' + '{{title}}' + '}'  I'm inside curly bracket </h1> -->
+<a href="https://www.positronx.io/angular-7-ngclass-and-ngstyle-explained/"><h1> {{title}} </h1></a>
+<p>NgClass Directive: The ngClass Directive is used to add or remove CSS classes to an element.</p>
+<p [innerText]="content"></p>
+
+<div [class.activeClass]="condition">I am content with active class</div>
+<!-- Multiple Classes Example Using NgClass String, Array and Object Expression -->
+<br>
+
+<div [ngClass]="'classOne classTwo' "> Heading  </div>
+<div [ngClass]="['classTwo ']">NgClass Array Expression</div>
+<div [ngClass]="{'One':true ,'Two':true, 'Three':false}">NgClass Object Expression</div>
+<div [ngClass]="{'classOne classTwo classThree': true}">NgClass Object with multiple Key</div>
+
+<br>
+<div [ngClass]="{ 
+    'activeClass':condition,
+    'inactiveClass':!condition,
+    'focusClass': condition && otherCondition
+}"> Little boy jump over the wall</div>
+
+<div [ngStyle]="{'color': 'Red', 'font-size': '45px', 'font-weight': 'bold'}">I am a class</div>
+
+<!-- <div [ngStyle]="{'color': color, 'font-size': size}">
+  Manage Dynamic Style with Angular
+</div>
+
+<input [(ngModel)]="color" placeholder="Enter color name" /><br>
+
+<input [(ngModel)]="size" placeholder="Enter font size"  /> -->
+<!-- 
+<div [ngClass]="['boldText', 'red']">classes of Array</div>
+<div [ngClass]="'italicText orange'">classes of string</div> -->
+<!-- <div [ngClass]="{'tinyText': true, 'blue': true}">classes of object</div> -->
+
+<div [ngStyle]="{'background-color': 'blue'}">Hello World!</div>
+
+<!-- <div [ngStyle]="{'background-color':user.state === 'Ohio' ? 'blue' : 'green' }">Cincinnati Ohio</div> -->
+
+<!-- Setting Up Dynamic Color Using NgStyle in Angular -->
+
+<h4>NgStyle Example in angular 7 </h4>
+  <ul *ngFor="let person of data">
+    <li [ngStyle]="{'color': setUserColor(person.state)}"> {{person.name}}
+    </li>
+  </ul>
+
+  <!-- / / Syntax -->
+<!-- [style.<property>] -->
+
+<!-- // NgStyle Property
+[style.color]="setUserColor(person.state)" -->
+
+<ul *ngFor="let person of data">
+  <li [style.color]="setUserColor(person.country)">{{ person.name }} ({{ person.state }})</li>
+</ul>
+
+<h5>NgStyle Example in angular 7 </h5>
+    <ul *ngFor="let person of data">
+      <li [ngStyle]="{'font-size.px':26}"
+          [style.color]="setUserColor(person.state)">{{ person.name }}
+      </li>
+    </ul>
