@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+	<h1>
+		Welcome to {{ title }}!
+	</h1>
+	
+
+  <a [routerLink]="[
+  { 
+    outlets: { primary: ['products'], sidebar: ['products']}
+  }
+  
+  ]">
+		Products
+	</a>
+
+</div>
+
+<div>
+  <!-- //unnamed outlet is the primary outlet. -->
+	<div style="float:right">
+		<router-outlet></router-outlet>
+	</div>
+	<div style="float:left">	
+		<router-outlet name="sidebar"></router-outlet>
+	</div>
+</div>
