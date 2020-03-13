@@ -1,0 +1,103 @@
+
+ul > li{
+    color:blue;
+}
+
+.list > .list-item{
+    color: red;
+}
+
+/*  */
+nav#nav > li:hover {
+    color: purple;
+}
+
+ li:nth-child(2):hover {
+    color: rgb(0, 255, 0);
+}
+
+.favorite {
+    color: red;
+    font-weight: bold;
+  }
+
+  ul#summer-drinks li {
+    font-weight: normal;
+    font-size: 12px;
+    color: black;
+ }
+ 
+ ul#summer-drinks li.favorite {
+    color: red;
+    font-weight: bold;
+  }
+/*  
+  ul#summer-drinks li.favorite {
+    color: red !important;
+    font-weight: bold !important;
+  } */
+
+  div#test span { color: green; }
+  div span { color: blue; }
+  span { color: red; }
+
+  .foo[style*="color: red"] { 
+    color: firebrick !important;
+  }
+
+  .red {
+    color: #f33;
+  }
+  
+  .yellow-bg {
+    background: #ffa;
+  }
+  
+  .fancy {
+    font-weight: bold;
+    text-shadow: 4px 4px 3px #77f;
+  }
+
+  #identified {
+    background-color: skyblue;
+  }
+
+  div.outer p {
+    color: orange;
+  }
+  
+  div:not(.outer) p {
+    color: blueviolet;
+  }
+
+  div:where(.outer) p {
+    color: orange;
+  }
+  
+  div p {
+    color: blueviolet;
+  }
+
+  *#foo {
+    color: green;
+  }
+  
+  *[id="foo"] {
+    color: purple;
+  }
+
+  body h1 {
+    color: green;
+  }
+  
+  html h1 {
+    color: purple;
+  }
+
+  #parent {
+    color: green;
+  }
+  
+  h1 {
+    color: purple;
+  }

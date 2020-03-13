@@ -1,0 +1,5 @@
+#a {background-color: yellow;}
+
+div#a {background-color: green;} 
+
+div[id=a] {background-color: blue;}

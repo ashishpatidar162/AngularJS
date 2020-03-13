@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>Canvas Browser Support Check</title>
+    <script type="text/javascript">
+        var canvas=document.getElementById('tutorial');
+
+        if (canvas.getContext   ) {
+            var ctx=canvas.getContext('2d');
+
+        } else {
+            //canvas-unsupported Code
+        }
+    </script>
+</head>
+
+<body onload="">
+    <canvas id="tutorial" width="150" height="150"> </canvas>
+</body>
+
+</html>

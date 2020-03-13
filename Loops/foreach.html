@@ -1,0 +1,31 @@
+<html>
+
+<head>For Each designed for retrieve element of array</head>
+
+<body>
+    <button onclick="myClick1()">Click Button</button>
+
+    <script>
+
+        function myClick() {
+            var arr = ["Ashish", "Rahul", "Monu"];
+
+            arr.forEach(function (name, i, l) {
+                // document.write(i + " " + name + "<br>");
+                document.write(l);
+            });
+
+        }
+        function myClick1(){
+            var arr=['ranu','ronak','manish'];
+            arr.reverse();
+            arr.forEach(function(name){
+                document.write(name + "<br>");
+            });
+        }
+      
+    </script>
+
+</body>
+
+</html>

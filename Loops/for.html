@@ -1,0 +1,128 @@
+<html>
+
+<head>For Loops Examples </head>
+
+<body>
+    <button onclick="myClick()">Click Button</button>
+    <button onclick="myClick1()">Click Button 1</button>
+    <button onclick="myClick2()">Click Button 2</button>
+    <button onclick="myClick3()">Click Button 3</button>
+    <button onclick="myClick4()">Click Button 4</button>
+    <button onclick="myClick5()">Click Button 5</button>
+    <button onclick="myClick6()">Click Button 6</button>
+    <button onclick="myClick7()">Click Button 7</button>
+    <button onclick="myClick8()">Click Button 8</button>
+    <button onclick="myClick9()">Click Button 9</button>
+
+    <p id="test" style="color :purple"></p>
+    <p id="test1" style="color: royalblue"></p>
+    <script>
+        function myClick() {
+            var text = "";
+            for (var i = 0; i < 5; i++) {
+                text += "The number is " + i + "<br>";
+            }
+            document.getElementById("test").innerHTML = text;
+        }
+
+        function myClick1() {
+            var cars = ["BMW", "Mercery", "Juguar"];
+            var text = "";
+            for (var i = 0; i < cars.length; i++) {
+                text += cars[i] + "<br>";
+            }
+            document.getElementById("test").innerHTML = text;
+        }
+        function myClick2() {
+            var cars = ["Lambergiani", "xuv", "Audi"];
+            //    var text="";
+            for (var i = 0, lenn = cars.length, text = ""; i < lenn; i++) {
+                text += cars[i] + "<br>";
+            }
+            document.getElementById("test").innerHTML = text;
+        }
+
+        function myClick3() {
+            var cars = ["BMW", "Volvo", "Saab", "Ford"];
+            var i = 2;
+            var len = cars.length;
+            var text = "";
+            for (; i < len; i++) {
+                text += cars[i] + "<br>";
+            }
+            document.getElementById("test").innerHTML = text;
+        }
+
+        function myClick4() {
+            var text = ""
+            var i;
+            for (i = 0; i < 5; i++) {
+                if (i == 3) {
+                    continue;
+                }
+                text += "The number is " + i + "<br>";
+            }
+            document.getElementById("test").innerHTML = text;
+        }
+
+        function myClick5() {
+            var cars = ["BMW", "Volvo", "Saab", "Ford"];
+            var text = "";
+            var i;
+            for (i = 0; ; i++) {
+                if (i == 3) {
+                    break;
+                }
+                text += cars[i] + "<br>";
+            }
+            document.getElementById("test").innerHTML = text;
+        }
+
+        function myClick6() {
+            var cars = ["BMW", "Volvo", "Saab", "Ford"];
+            var text = "";
+            var i;
+            for (i = cars.length - 1; i >= 0; i--) {
+                text += cars[i] + "<br>";
+            }
+            document.getElementById("test").innerHTML = text;
+        }
+
+        function myClick7() {
+            var cars = ["BMW", "Volvo", "Saab", "Ford"];
+            var len = cars.length;
+          //   text = "";
+            for (let i = 0; i < len;i++) {
+                text += cars[i] + "<br>";
+              //  console.log(typeOf(text));
+              document.getElementById("test").innerHTML = text;
+            }
+        }
+
+        function myClick8() {
+            var myNodelist = document.getElementsByTagName("P");
+            var i;
+            for (i = 0; i < myNodelist.length; i++) {
+                myNodelist[i].style.backgroundColor = "red";
+            }
+            document.getElementById("test").innerHTML = myNodelist;
+        }
+
+        function myClick9() {
+            var text = "";
+            var i, j;
+
+            for (i = 0; i < 3; i++) {
+                text += "<br>" + "i = " + i + ", j = ";
+
+                for (j = 10; j < 15; j++) {
+                    document.getElementById("test").innerHTML = text += j + " ";
+                }
+            }
+            // document.getElementById("test").innerHTML=text;
+        }
+
+    </script>
+</body>
+
+</html>

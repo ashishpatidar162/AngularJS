@@ -1,0 +1,29 @@
+<html>
+
+<head>for/of - loops through the values of an iterable object,array</head>
+
+<body>
+    <button onclick="myClick()">Click Button</button>
+    <button onclick="myClick1()">Click Button 1</button>
+
+<script>
+        function myClick() {
+            var txt = "javascript";
+            for (x of txt) {
+                document.write(x +"<br>");
+            }
+        }
+
+        function myClick1() {
+            var cars = ['BMW', 'Volvo', 'Mini'];
+            //var x;
+
+            for (x of cars) {
+                document.write(x + "<br >");
+            }
+        }
+
+    </script>
+</body>
+
+</html>
